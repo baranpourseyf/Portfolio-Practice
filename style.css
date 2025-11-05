@@ -1,0 +1,106 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero .avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: #ff4fd8;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #000;
+}
+
+.skills,
+.projects,
+.experience,
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.job {
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+footer {
+  background: #000;
+  padding: 2rem;
+}
+
+.socials img {
+  width: 25px;
+  margin: 0 10px;
+}
