@@ -8,12 +8,32 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: flex-start; */
+  width: 100%;
   align-items: center;
-  padding: 1rem 3rem;
+  gap: 2rem; /* e.g., 2rem spacing between logo and nav */
+  /* padding: 1rem 3rem; */
   background: #000;
   position: sticky;
   top: 0;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Make nav links stay in one row next to logo */
+nav {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: 100px;
+  margin: auto;
+  gap: 2rem; /* space between links */
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav a {
