@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+}
+
+/* Style for the entire website */
+
 body {
   font-family: "Poppins", sans-serif;
   background: #111;
@@ -6,6 +12,7 @@ body {
   line-height: 1.6;
 }
 
+/* A */
 header {
   display: flex;
   /* justify-content: flex-start; */
@@ -16,6 +23,7 @@ header {
   background: #000;
   position: sticky;
   top: 0;
+  z-index: 999;
 }
 
 .logo {
@@ -45,15 +53,23 @@ nav a {
 nav a:hover {
   color: #fff;
 }
+/* -A */
 
+/* B */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
 }
 
-.hero .avatar {
-  width: 120px;
-  border-radius: 50%;
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+}
+
+.avatar-container .avatar {
+  position: absolute;
 }
 
 .hero h1 {
@@ -61,8 +77,14 @@ nav a:hover {
   margin-top: 1rem;
 }
 
-.highlight {
+/* .highlight {
   color: #ff4fd8;
+} */
+
+.gradient-text {
+  background: linear-gradient(to right, #ff8660, #9a33ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .buttons {
@@ -83,12 +105,40 @@ nav a:hover {
   color: #000;
 }
 
-.skills,
-.projects,
-.experience,
-footer {
+.hero p {
+  color: rgb(127, 135, 143);
+}
+/* -B */
+
+/* C */
+.skills {
   text-align: center;
   padding: 3rem 2rem;
+}
+
+.skills h2 {
+  font-weight: 300;
+  color: darkgrey;
+  font-size: larger;
+  letter-spacing: 0.25rem;
+}
+.icons {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+/* -C */
+
+/* D */
+.projects {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.projects h2 {
+  font-weight: 800;
+  color: #ff8660;
 }
 
 .project-grid {
@@ -108,19 +158,43 @@ footer {
 .project-card img {
   width: 100%;
 }
+/* -D */
+
+/* E */
+.experience {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.experience h2 {
+  font-weight: 800;
+  color: #2a79f0;
+}
 
 .job {
   margin: 2rem auto;
   max-width: 600px;
   text-align: left;
 }
+/* -E */
 
+/* F */
 footer {
   background: #000;
-  padding: 2rem;
+  text-align: center;
+  padding: 3rem 2rem;
 }
 
 .socials img {
   width: 25px;
   margin: 0 10px;
+}
+/* -F */
+
+/* A style you can use for all your elements */
+.center-flex {
+  gap: 8px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
 }

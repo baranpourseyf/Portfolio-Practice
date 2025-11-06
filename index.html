@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbod | Portfolio</title>
-    <link rel="icon" type="image/png" href="Images/Avatar.png" />
+    <!-- <link rel="icon" type="image/png" href="Images/Avatar/Avatar.png" /> -->
     <link rel="stylesheet" href="style.css" />
+
+    <!--How to import font-->
+    <!-- <style>
+      @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap");
+    </style> -->
   </head>
 
   <body>
+    <!-- A -->
     <header style="background-color: #1c1b1a">
       <!-- <div class="logo">Your Logo</div> -->
       <nav>
@@ -23,42 +29,71 @@
         </div>
       </nav>
     </header>
+    <!-- *A -->
 
     <!-- Home -->
+    <!-- B -->
     <section id="home" class="hero">
-      <img src="Images/avatar.png" alt="Your Avatar" class="avatar" />
+      <div class="avatar-container">
+        <img src="Images/Avatar/Avatar.png" alt="Your Avatar" class="avatar" />
+
+        <!--Test-->
+        <!-- <div class="avatar-ring">
+        <img src="Images/Avatar/Avatar.png" alt="Your Avatar" />
+      </div> -->
+        <!--Test-->
+
+        <img
+          src="Images/Avatar/AvatarBackground.png"
+          alt="Your Avatar's Background"
+          class="avatar-background" />
+      </div>
+
       <h1>
-        I do code and
+        <b>I do code and</b>
         <br />
         <span>
-          make content
-          <span class="highlight">about it!</span>
+          <!-- <p> -->
+          <b>
+            make content
+            <span class="gradient-text">about it!</span>
+          </b>
+          <!-- </p> -->
         </span>
       </h1>
-      <p>
+      <p style="max-width: 475px; margin-inline: auto">
         I am a seasoned full-stack software engineer with over 8 years of professional
         experience, specializing in backend development. My expertise lies in crafting
         robust and scalable SaaS-based architectures on the Amazon AWS platform.
       </p>
+      <br />
       <div class="buttons">
         <a href="#contact" class="btn primary">Get In Touch</a>
         <a href="PDFs/Final_CV.pdf" class="btn">Download CV</a>
       </div>
     </section>
+    <!-- *B -->
 
     <!-- Skills -->
+    <!-- C -->
     <section class="skills">
-      <h2>Experience With</h2>
+      <h2>Experience With:</h2>
       <div class="icons">
-        <img src="Images/Icons/javascript.png" alt="JavaScript" />
-        <img src="Images/Icons/nodejs.png" alt="Node.js" />
-        <img src="Images/Icons/html.png" alt="HTML" />
-        <img src="Images/Icons//css.png" alt="CSS" />
-        <img src="Images/Icons/reactjs.png" alt="React" />
+        <img
+          src="Images/Icons/javascript.png"
+          alt="JavaScript"
+          height="42px"
+          width="42px" />
+        <img src="Images/Icons/nodejs.png" alt="Node.js" height="42px" width="42px" />
+        <img src="Images/Icons/html.png" alt="HTML" height="42px" width="37px" />
+        <img src="Images/Icons//css.png" alt="CSS" height="42px" width="37px" />
+        <img src="Images/Icons/reactjs.png" alt="React" height="42px" width="47" />
       </div>
     </section>
+    <!-- *C -->
 
     <!-- Projects -->
+    <!-- D -->
     <section id="projects" class="projects">
       <h2>Projects</h2>
       <div class="project-grid">
@@ -74,42 +109,54 @@
         </div>
       </div>
     </section>
+    <!-- *D -->
 
     <!-- Experience -->
+    <!-- E -->
     <section id="experience" class="experience">
       <h2>Experience</h2>
       <div class="job">
-        <h3>
-          <img src="Images/Icons/google-logo.png" />
-          Lead Software Engineer at Google
-        </h3>
-        <span>Nov 2019 – Present</span>
+        <div style="display: flex; justify-items: center; justify-content: space-between">
+          <div class="center-flex">
+            <img src="Images/Icons/google-logo.png" width="42px" height="42px" />
+            <h3 style="margin-top: 10px">Lead Software Engineer at Google</h3>
+          </div>
+          <span style="margin-top: 14px">Nov 2019 – Present</span>
+        </div>
         <p>
           Developing innovative solutions for Google's core search algorithms, improving
           search accuracy and efficiency.
         </p>
       </div>
+
       <div class="job">
-        <h3>
-          <img src="Images/Icons/Apple.png" />
-          Junior Software Engineer at Apple
-        </h3>
-        <span>Jan 2016 – Dec 2017</span>
+        <div style="display: flex; justify-items: center; justify-content: space-between">
+          <div class="center-flex">
+            <img src="Images/Icons/Apple.png" width="42px" height="42px" />
+            <h3 style="margin-top: 10px">Junior Software Engineer at Apple</h3>
+          </div>
+          <span style="margin-top: 14px">Jan 2016 – Dec 2017</span>
+        </div>
         <p>
           Responsible for designing scalable systems and leading a cross-functional team.
         </p>
       </div>
+
       <div class="job">
-        <h3>
-          <img src="Images/Icons/meta-logo.png" />
-          Software Engineer at Meta
-        </h3>
-        <span>Jan 2017 – Oct 2019</span>
+        <div style="display: flex; justify-items: center; justify-content: space-between">
+          <div class="center-flex">
+            <img src="Images/Icons/meta-logo.png" width="42px" height="42px" />
+            <h3 style="margin-top: 10px">Software Engineer at Meta</h3>
+          </div>
+          <span style="margin-top: 14px">Jan 2016 – Dec 2017</span>
+        </div>
         <p>Worked on large-scale backend systems supporting millions of users.</p>
       </div>
     </section>
+    <!-- *E -->
 
     <!-- Contact -->
+    <!-- F -->
     <footer id="contact">
       <h2>Contact</h2>
       <p>
@@ -128,6 +175,7 @@
         <a href="#"><img src="Images/Icons/Youtube.png" alt="LinkedIn" /></a>
       </div>
     </footer>
+    <!-- *F -->
 
     <main></main>
   </body>
